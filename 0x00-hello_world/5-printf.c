@@ -2,7 +2,7 @@
 
 /**
 *
-*main -c asd
+* main -c asd
 *
 *
 */
