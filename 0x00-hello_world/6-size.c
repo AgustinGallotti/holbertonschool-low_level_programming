@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main() {
-  intType;
+  int intType;
   float floatType;
   double doubleType;
   char charType;
