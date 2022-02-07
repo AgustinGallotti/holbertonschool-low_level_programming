@@ -3,14 +3,14 @@
 
 /**
 * print_last_digit - digittttttttit
-* @a: stststs
-* Return: lastDigit
-*/
-int print_last_digit(int a)
+* @n: stststs
+* Return: 1
+**/
+int print_last_digit(int n)
 
-int lastDigit(int a);
-a = a % 10;
-if (a < 0)
-a = a * -1;
-_putchar ('0' + a);
+int n
+n = n % 10;
+if (n < 0)
+n = n * -1;
+_putchar ('0' + n);
 return (1);
