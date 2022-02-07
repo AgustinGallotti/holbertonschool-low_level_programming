@@ -8,15 +8,15 @@
 *
 * Return: Always 0 (Success)
 */
-int main()
+int main(void)
 {
-int _islower(int c);
-char (Ch);
+int _islower(int ch);
+char (ch);
 	   
 printf("\n Please Enter any alphabet\n");
-scanf("%c", &Ch);
+scanf("%c", &ch);
 
-if ( islower(Ch) )
+if ( islower(ch) )
 {  
 printf ("\n Entered character is lowercase alphabet");
 }
@@ -26,7 +26,7 @@ printf("\n Entered character is Not lowercase alphabet");
 }
 
 else if 
-	return ((1 = islower(Ch));
+	return ((1 = islower(ch));
 
 else
 	return (0);
