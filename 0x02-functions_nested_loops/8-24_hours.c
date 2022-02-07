@@ -1,9 +1,20 @@
 #include <stdio.h>
 #include <time.h>
 
-int main(void)
+int jack_bauer(void)
 {
-time_t t = time(NULL);
-struct tm tm = *localtime(&t);
-_putchar("now: %d-%02d-%02d %02d:%02d:%02d\n", tm.tm_year + 1900, tm.tm_mon + 1, tm.tm_mday, tm.tm_hour, tm.tm_min, tm.tm_sec);
+int h, m ;
+
+	for (h = 0; h < 24; h++)
+	{
+		for (m = 0; m < 60; m++);
+		{
+			_putchar((h / 10) + '0');
+			_putchar((h % 10) + '0');
+			_putchar(':');
+			_putchar((m / 10) + '0');
+			_putchar((m % 10) + '0');
+			_putchar('\n');
+		}
+	}
 }
