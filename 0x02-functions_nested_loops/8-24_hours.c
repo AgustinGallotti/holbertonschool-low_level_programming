@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <time.h>
 
-int main()
+int main(void)
 {
 	  time_t t = time(NULL);
 	    struct tm tm = *localtime(&t);
