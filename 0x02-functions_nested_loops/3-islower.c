@@ -2,20 +2,17 @@
 #include <ctype.h>
 
 /**
-*
-* main - Entry Point
-*
-* Return: Always 0 (Success)
+* _islower -a function that chekcs for lowercase character
+* @c: single letter input
+* Return: 1 if int c is lowercase, 0 if otherwise
 */
-int _islower(void)
+int _islower(int c)
 {
 int c
 {
-if (c >= 'a' && 'z' =< c)
+if (c >= 'a' && c <= 'z')
 return (1);
 
 else
-
 return (0);
-}
 }	
