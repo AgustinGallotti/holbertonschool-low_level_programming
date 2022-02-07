@@ -1,12 +1,7 @@
-#include <stdio.h>
+#ifndef MAIN_H
+#define MAIN_H
 
-/**
-* main -chek the code
-*
-* Return: Always 0
-*/
-int ch
-void print_alphabet(void)
-{
-  putchar(ch) ; ch++ ;
-}
+int _putchar(char c);
+void print_alphabet(void);
+
+#endif

@@ -2,15 +2,12 @@
 #include "main.h"
 
 /**
-* main - Check the code
-*
-* Return: Always 0
-*
+* print_alphabet - abcd
 */
-void print_alphabet(void);
+void print_alphabet(void)
 {
 int ch;
 for (ch = 'a' ; ch <= 'z' ; ch++)
-putchar('\n')
-return (0);
+_putchar(ch);
+_putchar('\n');
 }
