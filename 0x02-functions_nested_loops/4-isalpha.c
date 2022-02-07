@@ -2,9 +2,9 @@
 #include <ctype.h>
 
 /**
-* _islower -a function that chekcs for lowercase character
+* _isalpha -a function that chekcs for upercase character
 * @c: single letter input
-* Return: 1 if int c is lowercase, 0 if otherwise
+* Return: 1 if int c is upercase, 0 if otherwise
 */
 int _isaplha(int c)
 {
