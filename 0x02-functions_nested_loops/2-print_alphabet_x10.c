@@ -13,7 +13,7 @@ for (letter = 'a'; letter <= 'z'; letter++)
 {
 _putchar(letter);
 }
-count++:
+count++;
 _putchar('\n');
 }
 }
