@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 #include <ctype.h>
 
@@ -8,15 +7,14 @@
 *
 * Return: Always 0 (Success)
 */
-int main(void)
+int _islower(void)
 {
-int _islower(int ch);
 char ch;
 {
-if (islower(c) == 1)
+if (c >= 'a' && 'z' =< c)
+return (1);
 }
 {
-else (0)
+else (0);
 }
-}
-	
+}	
