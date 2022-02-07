@@ -9,12 +9,13 @@
 */
 int _islower(void)
 {
-char ch;
+int c
 {
 if (c >= 'a' && 'z' =< c)
 return (1);
-}
-{
-else (0);
+
+else
+
+return (0);
 }
 }	
