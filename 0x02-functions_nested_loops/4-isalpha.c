@@ -2,9 +2,9 @@
 #include <ctype.h>
 
 /**
-* _isalpha -a function that chekcs for upercase character
-* @c: single letter input
-* Return: 1 if int c is upercase, 0 if otherwise
+* _isalpha - check if its uppercase or not
+* @c: fe
+* Return: 1 if its upercase, 0 if otherwise
 */
 int _isaplha(int c)
 {
