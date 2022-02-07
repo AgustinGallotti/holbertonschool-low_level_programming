@@ -1,5 +1,9 @@
 #include "main.h"
 
+/**
+* jack_bauer - jasjajs
+* Return: 24 hours
+*/
 int jack_bauer(void)
 {
 	int h, m;
