@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <time.h>
+#include "main.h"
 
 int jack_bauer(void)
 {
