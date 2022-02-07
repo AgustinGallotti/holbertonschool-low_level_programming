@@ -1,8 +1,12 @@
 #include <stdio.h>
-int main(void)
+
+/**
+* main -chek the code
+*
+* Return: Always 0
+*/
+int ch
+void print_alphabet(void)
 {
-char c;
-for (c = 'a'; c <= 'z'; ++c)
-printf("%c ", c);
-return (0);
+  putchar(ch) ; ch++ ;
 }
