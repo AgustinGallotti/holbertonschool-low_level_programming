@@ -4,7 +4,7 @@
 /**
 * main - Entry Point
 *
-* Return: check the code
+* Return: Always 0 (Success)
 */
 int main(void)
 {
@@ -25,5 +25,5 @@ int main(void)
   {
     printf("%d is negative\n", n);
   }
-  return (check);
+  return (i);
 }
