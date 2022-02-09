@@ -3,7 +3,7 @@
 
 /**
 * more_numbers - a function to more numbers
-* Return: 1 to 14 numbers (Success)
+* Return: 1 to 14 numbers
 */
 void more_numbers(void)
 {
@@ -18,8 +18,8 @@ for (count = 1; count <= 10; count++)
 			_putchar((num / 9) + '0');
 		}
 	}
-}
-{
-	_putchar('\n');
+	{
+		_putchar('\n');
+	}
 }
 }
