@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
 *add - sdkksd
@@ -8,7 +9,5 @@
 */
 int mul(int a, int b);
 {
-	{
 	return  (a * b);
-	}
 }
