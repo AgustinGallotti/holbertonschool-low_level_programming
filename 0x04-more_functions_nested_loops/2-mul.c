@@ -2,12 +2,12 @@
 #include <stdio.h>
 
 /**
-*add - sdkksd
+*mul - sdkksd
 *@b: kdk
 *@a: hdh
 * Return: fg
 */
-int mul(int a, int b);
+int mul(int a, int b)
 {
 	return  (a * b);
 }
