@@ -21,7 +21,6 @@ int main(void)
 		n1 = n2;
 		n2 = sum;
 	}
-
 	n1_h1 = n1 / 10000000000;
 	n2_h1 = n2 / 10000000000;
 	n1_h2 = n1 % 10000000000;
@@ -37,15 +36,15 @@ int main(void)
 			h2 %= 10000000000;
 		}
 																										printf("%lu%lu", h1, h2);
-
 		if (i != 98)
+		{
 			printf(", ");
 			n1_h1 = n2_h1;
 			n1_h2 = n2_h2;
 			n2_h1 = h1;
 			n2_h2 = h2;
+		}
 	}
 	printf("\n");
 	return (0);
 }
-
