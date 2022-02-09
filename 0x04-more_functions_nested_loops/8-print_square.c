@@ -15,7 +15,7 @@ for (s = 0; s < size; s++)
 {
 	for (x = 0; x < size; x++)
 	{	
-		_putchar('*');
+		_putchar('#');
 	}
 }
 if (size >= 0)
