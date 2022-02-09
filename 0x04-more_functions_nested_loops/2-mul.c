@@ -6,7 +6,7 @@
 *@a: hdh
 * Return: fg
 */
-	int add(n1, n2)
+	int add(a, b)
 	{
-	return  (n1 * n2);
+	return  (a * b);
 	}
