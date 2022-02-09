@@ -5,13 +5,13 @@
 * print_numbers - abcd
 */
 void print_numbers(void)
-void _putchar(void)
+void _putchar(char c)
 
 {
 	int n;
 	for (n = '0' ; n <= '9';)
 	{
-		_putchar(n);
+		_putchar(ch);
 		_putchar('\n');
 	}
 }
