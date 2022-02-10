@@ -1,30 +1,27 @@
-#include <stdio.h>
 #include "main.h"
+#include <stdio.h>
 
 /**
-* print_square - as
-* @size: sd
-*
-* Return: msdks
-*/
+ * print_square - prints a square, followed by a new line
+ * @size: size of the square
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
 void print_square(int size)
 {
-	int x, s;
+	int lrg, anch;
 
 	if (size <= 0)
-	{
 		_putchar('\n');
-	}
 
 	else
 	{
-		for (s = 1; s <= size; s++)
+		for (lrg = 0; lrg < size; lrg++)
 		{
-			for (x = 1; x < size; x++)
-			{
-				_putchar('#');
-			}
+			for (anch = 0; anch < size; anch++)
+				_putchar ('#');
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
 }
