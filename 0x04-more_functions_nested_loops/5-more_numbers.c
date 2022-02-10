@@ -1,23 +1,22 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
-* more_numbers - a function to more numbers
-* Return: 1 to 14 numbers
+*more_numbers - asdf
+*
+* Return:ghjk
 */
 void more_numbers(void)
 {
-int ch, count;
-for (count = 1; count <= 10; count++)
+int num, i;
+
+for (i = 1; i <= 10; i++)
 {
-for (ch = 0; ch <= 14; ch++)
+for (num = 0; num <= 14; num++)
 {
-if (ch > 9)
-_putchar((ch / 9) + '0');
-_putchar((ch / 9) + '0');
+if (num > 9)
+_putchar((num / 10) + '0');
+_putchar((num % 10) + '0');
 }
-{
 _putchar('\n');
-}
 }
 }
