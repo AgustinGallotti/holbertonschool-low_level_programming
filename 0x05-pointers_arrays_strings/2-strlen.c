@@ -2,8 +2,9 @@
 #include <string.h>
 
 /**
-* strlen - instrucciones
+* _strlen - instrucciones
 * @s: aas
+* Return: strlen
 */
 int _strlen(char *s)
 {
