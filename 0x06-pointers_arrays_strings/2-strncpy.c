@@ -1,14 +1,17 @@
 #include "main.h"
 
-char *
-strncpy(char *dest, const char *src, size_t n)
-{
-	while (dest [a])
-		a++
-	
-	while (b < n && src [b])
-	{	
-		dest[a] = src[b]
+/**
+* _strncpy: copiar
+* @dest: jasnd
+* @src: jasnd
+* @n: asj
+*/
+char *_strncpy(char *dest, char *src, int n)
+
+	int b;
+
+	while (b < n)
+	{
+		dest[n] = src[b];
 	}
-	return dest;
-}
+	return (dest)n;
