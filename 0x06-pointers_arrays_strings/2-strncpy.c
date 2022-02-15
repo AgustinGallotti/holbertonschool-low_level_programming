@@ -7,11 +7,7 @@
 * @n: asj
 */
 char *_strncpy(char *dest, char *src, int n)
-
-	int b;
-
-	while (b < n)
-	{
-		dest[n] = src[b];
-	}
-	return (dest)n;
+{
+	int a = 0, c = 0;
+	
+	while 

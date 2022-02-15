@@ -1,15 +1,21 @@
 #include "main.h"
 
-/** _strcmp: comparar
-* @s1
-* @s2
+/**
+*_strcmp: comparar
+* @s1: as
+* @s2: sasdd
 * Return: ass
 */
-int _strcmp(char *s1, char *s2);
+
+int _strcmp(char *s1, char *s2)
 {
-	while (s1 < s2)
-	{
-		dest[s1] == src[s2];
-	}
-	return (dest);
+	int x;
+
+	for (x = 0; s1[x] != '\0'; x++)
+		if (s1[x] != s2[x])
+			return (s1[x] - s2[x]);
+
+	if (s1[x] != '\0')
+		return (s1[x] - s2[x]);
+	return (0);
 }
