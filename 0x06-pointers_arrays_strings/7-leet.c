@@ -1,28 +1,28 @@
 #include "main.h"
 
 /**
- * char *leet(cha *) - replace
- * @str: string assigned
- * Return: replace
+ * leet - a function that encodes a string into 1337
+ *@a: pointer
+ *Return: 1337
  */
-char *leet(char *str)
+char *leet(char *a)
 {
-	char SP[6] = {4, 3, 0, 7, 1};
-	char x[6] = {a, e, o, t, l};
-	char j[6] = {A, E, O, T, L};
+	char min[6] = {'a', 'e', 'o', 't', 'l', '\0'};
+	char mayus[6] = {'A', 'E', 'O', 'T', 'L', '\0'};
+	char num[6] = {'4', '3', '0', '7', '1', '\0'};
+	int x;
+	int z;
 
-	while (str[x] > 64 && str[x] < 91; i++)
+	for (x = 0; a[x] != '\0'; x++)
 	{
-		x = SP
-	{
-		while (str[j] > 96 && j[SP] < 123; j++)
+		for (z = 0; z < 6; z++)
 		{
-			j = SP
-		}
-			if (str[x] == SP[x])
+			if (a[x] == min[z] || a[x] == mayus[z])
 			{
-				str[x] 
+				a[x] = num[z];
+				break;
 			}
+		}
 	}
-return (str);
+return (a);
 }
