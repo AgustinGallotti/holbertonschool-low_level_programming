@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * leet - a function that encodes a string into 1337
- *@a: pointer
- *Return: 1337
+ * rot13 - a function that encodes a string into 1337
+ * @a: pointer
+ * Return: 1337
  */
 char *rot13(char *a)
 {
 	char abc[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char rot[] ="NOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLM";
+	char rot[] = "NOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLM";
 	int x;
 	int z;
 
@@ -23,5 +23,5 @@ char *rot13(char *a)
 			}
 		}
 	}
-return (abc);
+	return (a);
 }
