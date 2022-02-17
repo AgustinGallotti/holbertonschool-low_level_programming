@@ -14,11 +14,11 @@ char *rot13(char *a)
 
 	for (x = 0; a[x] != '\0'; x++)
 	{
-		for (z = 0; z < 6; z++)
+		for (z = 0; z != '\0'; z++)
 		{
 			if (a[x] == abc[z])
 			{
-				abc[x] = rot[z];
+				a[x] = rot[z];
 				break;
 			}
 		}
