@@ -3,7 +3,8 @@
 /**
 * print_number - mix
 * @n: as
-* return: putchar
+* _putchar: jee
+* return: unsigned
 */
 void print_number(int)
 
