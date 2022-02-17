@@ -7,8 +7,8 @@
  */
 char *rot13(char *a)
 {
-	char abc[] = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnñopqrstuvwxyz";
-	char rot[] ="NOPQRSTUVWXYZabcdefghijklmopqrstuvwxyzABCDEFGHIJKLM";
+	char abc[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char rot[] ="NOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLM";
 	int x;
 	int z;
 
