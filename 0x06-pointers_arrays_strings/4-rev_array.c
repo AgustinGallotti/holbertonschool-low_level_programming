@@ -1,32 +1,21 @@
 #include "main.h"
 
 /**
-* reverse_array - pa tras
-* x: jejee
-* y: jeje
-* @a: asj
-* @n: asd
-* Return: nothing
+* reverse_array - dadw
+* @a: d
+* @n: f
 */
+
 void reverse_array(int *a, int n)
 {
-	int x;
-	char y;
+	int z, x, y;
 
-	while (a[n] != '\0')
+	z = n - 1;
+
+	for (x = 0; x < z; x++, z--)
 	{
-		n++;
-		y++;
-	}
-	for (x = n - 1; x >= n / 2; x--)
-	{
-		y++;
-		a[x] = a[n - x - 1];
-		a[n - x - 1] = y;
-	}
-	for (x = n; x < 0; x++)
-	{
-		x++;
-		a[x] = a[n + x + 1];
+		y = a[z];
+		a[z] = a[x];
+		a[x] = y;
 	}
 }
