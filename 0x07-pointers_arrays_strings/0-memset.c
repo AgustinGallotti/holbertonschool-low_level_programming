@@ -1,16 +1,20 @@
 #include "main.h"
 
 /**
-*
-*
-*
-*
+* _memset - unsigned
+* @s: jeje
+* @b: jejee
+* @n: jejeje
+* Return: s
 */
-char *_memset(char *s, char b, unsigned int n);
+char *_memset(char *s, char b, unsigned int n)
 {
-	char *ss
+	unsigned int a;
 
-	for (;*s[n]; *ss[s])
-
+	for (a = 0; a < n;)
+	{
+		s[a] = b;
+		a++;
+	}
 return (s);
 }
