@@ -12,8 +12,11 @@ char *_strchr(char *s, char c)
 
 		for (a = 0; s[a] != c; a++)
 		{
+			return ('\0');
+		}
 			for (b = 0; s[b]; b++)
-				if (b = c)
-					return (c);
+		{
+			if (b = c)
+				return (c);
 		}
 }
