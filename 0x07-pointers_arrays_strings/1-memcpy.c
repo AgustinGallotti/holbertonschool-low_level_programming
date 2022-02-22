@@ -1,20 +1,16 @@
 #include "main.h"
 
 /**
-* _memcpy - copar punteros
-* @dest: je
-* @src: jee
-* @n: jeje
-* return: dest
-*/
+ *_memcpy - copy n bytes from src to dest
+ *@dest: destination
+ *@src: source
+ *@n: bytes to copy
+ *Return: pointer to dest
+ */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int a, b;
+	unsigned int b = 0;
 
-	while (dest[a])
-	{
-		a++;
-	}
 	while (b < n && (src[b] != '\0'))
 	{
 		dest[b] = src[b];
@@ -24,5 +20,6 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	{
 		dest[b] = '\0';
 	}
+
 	return (dest);
 }
