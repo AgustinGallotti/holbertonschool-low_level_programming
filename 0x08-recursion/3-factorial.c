@@ -2,6 +2,7 @@
 /**
 * factorial - facotrization
 * @n: variable
+*Return: d
 */
 int factorial(int n)
 {
