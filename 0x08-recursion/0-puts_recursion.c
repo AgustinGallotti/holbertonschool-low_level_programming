@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* puts_recursion - recursion
+* _puts_recursion - recursion
 * @s: puntero
 * Return: s
 */
