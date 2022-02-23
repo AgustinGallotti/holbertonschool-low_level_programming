@@ -16,6 +16,11 @@ int _con(int y, int n)
 }
 
 int _sqrt_recursion(int n)
+/**
+* _sqrt_recursion - recursividad
+* @n: variable
+* Return: n
+*/
 {
 	return (_con(0, n));
 }
