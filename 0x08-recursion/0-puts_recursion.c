@@ -3,8 +3,7 @@
 /**
 * puts_recursion - recursion
 * @s: puntero
-* @a: variable
-* Return: a
+* Return: s
 */
 void _puts_recursion(char *s)
 {
