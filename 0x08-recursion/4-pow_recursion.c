@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* _pow_recursion
+* _pow_recursion - a function that returns the value of x raised to y
 * @x: siuu
 * @y: siuuuuu
 * Return: value
