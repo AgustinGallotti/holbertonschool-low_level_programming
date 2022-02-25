@@ -3,7 +3,7 @@
 /**
 * main numbers - argumentos
 * @argc: argument
-* @argv: puntero
+* @argv: unuseddd
 * Return: 0
 */
 int main(int argc, char *argv[] __attribute__ ((unused)))
