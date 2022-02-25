@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
-* int main numbers - argumentos
+* main numbers - argumentos
 * @argc: argument
 * @argv: puntero
 * Return: 0
