@@ -24,8 +24,8 @@ int main(int argc, char *argv[])
 				return (1);
 			}
 		}
-	sum += atoi(argv[a]);
+	s += atoi(argv[x]);
 	}
-	printf("%d\n", sum);
+	printf("%d\n", s);
 	return (0);
 }
