@@ -1,19 +1,18 @@
 #include <stdio.h>
 
 /**
-* main - argumentos
+* main - argumentos recives
 * @argc: argument
 * @argv: puntero
-* @h: variable para recorrer
 * Return: 0
 */
 int main(int argc, char *argv[])
 {
-	int h = 0;
+	int h;
 
-	for (;h < argc; h++)
+	for (h = 0; h < argc; h++)
 	{
 		printf("%s\n", argv[h]);
 	}
-	return (0);
+return (0);
 } 
