@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
-* main numbers - argumentos
+* main - argumentos
 * @argc: argument
 * @argv: unuseddd
 * Return: 0
