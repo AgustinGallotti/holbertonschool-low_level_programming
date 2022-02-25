@@ -5,20 +5,18 @@
 * main - argumentos
 * @argc: argument
 * @argv: puntero
-* @x: variable para recorrer
-* @f: variable para multiplicar
 * Return: 0
 */
 int main(int argc, char *argv[])
 {
-    int x = 0;
+    int x = 1;
 	int f = 1;
 
-	if (argc < 2)
+	if (argc > 2)
 	{
 		for (x = 1; x < argc; x++)
 		{
-			f *= atoi(argv[x]);
+			f = f * atoi(argv[x]);
 		}
 			printf("%d\n", f);
 			return (0);
