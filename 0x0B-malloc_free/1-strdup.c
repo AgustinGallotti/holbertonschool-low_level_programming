@@ -3,34 +3,40 @@
 #include <string.h>
 
 /**
-* _strlen - largo
-* _strup - copiar
 * @str: str
-* Return: freenewstring
+* Return: aas
 */
+int _strlen(char *str)
+{
+	int a = 0;
+	while (*str != '\0')
+	{
+		a++;
+		str++;
+	}
+	return (a);
+}
+
+/**
+* _strdup - copiar
+* @str: strign
+* Return: strnew
+*/
+
 char *_strdup(char *str)
 {	
 	int a;
 	char *strnew;
 	
 	if (!str)
-		return (NULL);
-	
-	(strnew = malloc (strlen[strnew]) + 1)
-	
-	if (!newstring)
 	{
 		return (NULL);
 	}
-	else
+	strnew = malloc (strlen(str) + 1);
+	for (a = 0; str[a] != '\0'; a++)
 	{
-		for (a = 0; str[a] != 0; a++)
-		{
-			 strnew[a] = str[a];
-		}
-		{
-			strnew[a] = '\0';
-		}
+		strnew[a] = str[a];
+	}
+	strnew[a] = '\0';
 	return (strnew);
-	}
 }
