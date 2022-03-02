@@ -31,7 +31,11 @@ char *concate;
 
 if (!s1)
 {
-	return (NULL);
+	return ('\0');
+}
+if (!s2)
+{
+	return ('\0');
 }
 
 a = _strlen(s1);
