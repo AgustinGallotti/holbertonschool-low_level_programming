@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+
 /**
 * _strlen - el largo
 * @str: string
@@ -16,6 +17,7 @@ int _strlen(char *str)
 	}
 return (i);
 }
+
 /**
 * str_concat - concatenar
 * @s1: primer valor
@@ -29,7 +31,7 @@ char *concate;
 
 if (!s1 || !s2)
 {
-	return(NULL);
+	return (NULL);
 }
 
 a = _strlen(s1);
@@ -40,18 +42,18 @@ concate = malloc(1 * (c + 1));
 
 if (!concate)
 {
-	return(NULL);
+	return (NULL);
 }
-else
-{
-	for (i = 0 ; s1[i] != '\0'; i++)
+	else
 	{
-		concate[i] = s1[i];
-	}
-	for (i = 0; s2[i]; i++)
-	{
-		concate[i + a] = s2[i];
+		for (i = 0 ; s1[i] != '\0'; i++)
+		{
+			concate[i] = s1[i];
+		}
+		for (i = 0; s2[i]; i++)
+		{
+			concate[i + a] = s2[i];
+		}
 	}
 	return (concate);
-}
 }
