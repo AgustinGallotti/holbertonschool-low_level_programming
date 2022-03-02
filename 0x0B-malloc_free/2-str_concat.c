@@ -29,10 +29,14 @@ char *str_concat(char *s1, char *s2)
 int a, b, c, i;
 char *concate;
 
-if (!s1 || !s2)
+if (!s1)
 {
 	return (NULL);
 }
+	if (!s2)
+	{
+	return (NULL);
+	}
 
 a = _strlen(s1);
 b = _strlen(s2);
