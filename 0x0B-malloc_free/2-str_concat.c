@@ -33,10 +33,6 @@ if (!s1)
 {
 	return (NULL);
 }
-	if (!s2)
-	{
-	return (NULL);
-	}
 
 a = _strlen(s1);
 b = _strlen(s2);
