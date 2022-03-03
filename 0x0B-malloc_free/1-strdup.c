@@ -3,12 +3,14 @@
 #include <string.h>
 
 /**
+* _strlen - lenght
 * @str: str
 * Return: aas
 */
 int _strlen(char *str)
 {
 	int a = 0;
+
 	while (*str != '\0')
 	{
 		a++;
@@ -24,15 +26,15 @@ int _strlen(char *str)
 */
 
 char *_strdup(char *str)
-{	
+{
 	int a;
 	char *strnew;
-	
+
 	if (!str)
 	{
 		return (NULL);
 	}
-	strnew = malloc (strlen(str) + 1);
+	strnew = malloc(strlen(str) + 1);
 	for (a = 0; str[a] != '\0'; a++)
 	{
 		strnew[a] = str[a];
