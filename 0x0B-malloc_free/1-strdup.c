@@ -34,11 +34,18 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	strnew = malloc(_strlen(str) + 1);
-	for (a = 0; str[a] != '\0'; a++)
+	strnew = malloc (_strlen(str) + 1);
+	if (strnew == 0)
 	{
-		strnew[a] = str[a];
+		return (NULL);
 	}
-	strnew[a] = '\0';
+	else
+	{
+		for (a = 0; str[a] != '\0'; a++)
+		{
+			strnew[a] = str[a];
+		}
+		strnew[a] = '\0';
+	
 	return (strnew);
 }
