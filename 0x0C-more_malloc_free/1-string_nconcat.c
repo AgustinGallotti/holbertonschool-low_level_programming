@@ -8,7 +8,7 @@
 */
 int _strlen(char *p)
 {
-	int a;
+	int a = 0;
 
 	while (*p != '\0')
 	{
@@ -28,8 +28,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int a, b;
 	char *r;
+	
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 
-	r = malloc(_strlen(s1) + n * sizeof(*r));
+	r = malloc((_strlen(s1) + n + 1) * (sizeof(*r)));
 	if (!r)
 		return (NULL);
 	for (a = 0; s1[a]; a++)
