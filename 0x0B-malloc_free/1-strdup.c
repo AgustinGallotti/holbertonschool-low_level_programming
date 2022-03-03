@@ -46,6 +46,6 @@ char *_strdup(char *str)
 			strnew[a] = str[a];
 		}
 		strnew[a] = '\0';
-	
+	}
 	return (strnew);
 }
