@@ -29,17 +29,17 @@ char *str_concat(char *s1, char *s2)
 	int a, b, c, i;
 	char *concate;
 
-	if (!s1 == 0)
+	if (s1 == NULL)
 	{
 		s1 = "";
 	}
-	if (!s2 == 0)
+	if (s2 == NULL)
 	{
 		s2 = "";
 	}
 	
-	a = _strlen (s1);
-	b = _strlen (s2);
+	a = _strlen(s1);
+	b = _strlen(s2);
 	c = a + b;
 
 	concate = malloc(1 * (c + 1));
