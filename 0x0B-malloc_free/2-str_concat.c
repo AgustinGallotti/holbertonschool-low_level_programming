@@ -37,24 +37,24 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
+	
+	a = _strlen (s1);
+	b = _strlen (s2);
+	c = a + b;
 
-a = _strlen(s1);
-b = _strlen(s2);
-c = a + b;
+	concate = malloc(1 * (c + 1));
 
-concate = malloc(1 * (c + 1));
-
-if (!concate)
-{
-	return (NULL);
-}
+	if (!concate)
+	{
+		return (NULL);
+	}
 	else
 	{
-		for (i = 0 ; s1[i] != '\0'; i++)
+		for (i = 0 ; s1[i] != '\0' ; i++)
 		{
 			concate[i] = s1[i];
 		}
-		for (i = 0; s2[i]; i++)
+		for (i = 0 ; s2[i]; i++)
 		{
 			concate[i + a] = s2[i];
 		}
