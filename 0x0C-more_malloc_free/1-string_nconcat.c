@@ -4,18 +4,18 @@
 /**
 * _strlen - lenght
 * @p: puntero
-* Return: a
+* Return: i
 */
 int _strlen(char *p)
 {
-	int a = 0;
+	int i = 0;
 
 	while (*p != '\0')
 	{
-		a++;
+		i++;
 		p++;
 	}
-	return (a);
+	return (i);
 }
 /**
 * string_nconcat - concatenar
@@ -26,8 +26,8 @@ int _strlen(char *p)
 */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int a, b;
 	char *r;
+	unsigned int a, b;
 
 	if (s1 == NULL)
 		s1 = "";
