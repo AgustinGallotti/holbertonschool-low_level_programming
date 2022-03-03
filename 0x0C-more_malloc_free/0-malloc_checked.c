@@ -10,11 +10,10 @@ void *malloc_checked(unsigned int b)
 {
 	int *pun;
 
-	pun = malloc(sizeof(b));
+	pun = malloc(b);
 	if (!pun)
 	{
 		exit(98);
 	}
-	else
-		return (pun);
+	return (pun);
 }
