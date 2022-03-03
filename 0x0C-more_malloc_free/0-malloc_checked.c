@@ -1,10 +1,10 @@
--Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-string_nconcat.c -o 1-string_nconcatinclude "main.h"
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 /**
-* *malloc_checked - chekeado
+* malloc_checked - chekeado
 * @b: variable a medir
-* Return: b
+* Return: pun
 */
 void *malloc_checked(unsigned int b)
 {
