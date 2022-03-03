@@ -30,8 +30,13 @@ int a, b, c, i;
 char *concate;
 
 if (!s1 == 0)
-
+{
+	s1 = "";
+}
 if (!s2 == 0)
+{
+	    s2 = "";
+}
 
 a = _strlen(s1);
 b = _strlen(s2);
