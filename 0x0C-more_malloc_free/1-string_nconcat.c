@@ -1,6 +1,11 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
+/**
+* _strlen - lenght
+* @p: puntero
+* Return: a
+*/
 int _strlen(char *p)
 {
 	int a;
@@ -13,17 +18,17 @@ int _strlen(char *p)
 	return (a);
 }
 /**
-* *string_nconcatchar - concatenar
+* string_nconcat - concatenar
 * @s1: js
 * @s2: sj
 * @n: unsigned
 * Return: restultado de las dos s
 */
-char *string_nconcat(char *s1, char* s2, unsigned int n)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int a, b;
 	char *r;
-	
+
 	r = malloc(_strlen(s1) + n * sizeof(*r));
 	if (!r)
 		return (NULL);
