@@ -19,7 +19,7 @@ return (i);
 }
 
 /**
-* str_concat - concatenar
+:* str_concat - concatenar
 * @s1: primer valor
 * @s2: segundo valor
 * Return: s3
