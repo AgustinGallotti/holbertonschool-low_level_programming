@@ -37,7 +37,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
-	
+
 	a = _strlen(s1);
 	b = _strlen(s2);
 	c = a + b;
