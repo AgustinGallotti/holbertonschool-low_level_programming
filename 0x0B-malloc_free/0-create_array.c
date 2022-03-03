@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 #include <stdlib.h>
 
 /**
@@ -10,21 +10,21 @@ include "main.h"
 char *create_array(unsigned int size, char c)
 {
 	unsigned int a;
-	char *ar;
+	char *pt;
 
 	if (size == 0)
 	{
 		return (NULL);
 	}
-	ar = malloc(size * sizeof(*ar));
-	if (ar == NULL)
-	}
+	pt = malloc(size * sizeof(*pt));
+	if (pt == NULL)
+	{
 		return (NULL);
 	}
 	else
 	for (a = 0; a < size; a++)
 	{
-		ar[a] = c;
+		pt[a] = c;
 	}
-	return (ar);
+	return (pt);
 }
