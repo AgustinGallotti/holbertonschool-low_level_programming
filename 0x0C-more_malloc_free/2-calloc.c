@@ -21,9 +21,10 @@ char *_memset(char *s, char b, unsigned int n)
 	return (s);
 }
 /**
-*
-*
-*
+* _calloc - call
+* @nmemb: numero de elementos
+* @size: tamaño
+* Return: ar
 */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
