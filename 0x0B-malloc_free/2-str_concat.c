@@ -19,24 +19,24 @@ return (i);
 }
 
 /**
-:* str_concat - concatenar
+* str_concat - concatenar
 * @s1: primer valor
 * @s2: segundo valor
 * Return: s3
 */
 char *str_concat(char *s1, char *s2)
 {
-int a, b, c, i;
-char *concate;
+	int a, b, c, i;
+	char *concate;
 
-if (!s1 == 0)
-{
-	s1 = "";
-}
-if (!s2 == 0)
-{
-	    s2 = "";
-}
+	if (!s1 == 0)
+	{
+		s1 = "";
+	}
+	if (!s2 == 0)
+	{
+		s2 = "";
+	}
 
 a = _strlen(s1);
 b = _strlen(s2);
