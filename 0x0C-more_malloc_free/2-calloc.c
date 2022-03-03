@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
-* _memset -  a function that fills memory with a constant byte
+* _memset - a function that fills memory with a constant byte
 * @s: pointer
 * @b: constant
 * @n: n times
@@ -30,10 +30,9 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *ar;
 
-	ar = malloc(size * nmemb);
-
 	if (nmemb == 0 || size == 0)
 		return (NULL);
+	ar = malloc(size * nmemb);
 	if (!ar)
 		return (NULL);
 	if (ar)
