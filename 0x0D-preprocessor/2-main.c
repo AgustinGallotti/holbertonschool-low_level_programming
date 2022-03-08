@@ -1,7 +1,9 @@
 #include <stdio.h>
-/*
-* main - main function
-* return: 0
+
+/**
+*main - rq4r4rq4
+*
+*Return: 0 sasa
 */
 int main(void)
 {
