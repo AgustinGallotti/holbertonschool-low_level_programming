@@ -3,8 +3,8 @@
 #include "function_pointers.h"
 /**
 * print_name - printear el nombre
-* @name
-* @f
+* @name: nombre
+* @f: puntero
 * return: void
 */
 void print_name(char *name, void (*f)(char *))
