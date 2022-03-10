@@ -16,13 +16,11 @@ char *res;
 	for (x = 0; x < n;)
 	{
 		res = va_arg(sep, char *);
-		if (res != NULL)
-		{
+		if (!res)
+			printf("(nil)");
+		else
 			printf("%s", res);
 		x++;
-		}
-		else
-			printf("(nil)");
 		if (separator != NULL && x < n)
 			printf("%s", separator);
 		}
