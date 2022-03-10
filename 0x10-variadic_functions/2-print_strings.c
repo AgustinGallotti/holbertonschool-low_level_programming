@@ -2,7 +2,7 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
 /**
-* print_numbers - numbers n
+* print_strings - strings n
 * @separator: comas y espacios
 * @n: numero de argumentos
 */
