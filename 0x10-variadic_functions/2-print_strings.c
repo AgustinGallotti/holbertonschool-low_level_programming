@@ -18,7 +18,7 @@ char *res;
 		res = va_arg(sep, char *);
 		if (res != NULL)
 		{
-		printf("%s", res);
+			printf("%s", res);
 		x++;
 		}
 		else
@@ -26,6 +26,6 @@ char *res;
 		if (separator != NULL && x < n)
 			printf("%s", separator);
 		}
-printf("\n");
-va_end(sep);
+	printf("\n");
+	va_end(sep);
 }
