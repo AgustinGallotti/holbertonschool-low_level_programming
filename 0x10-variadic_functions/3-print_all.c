@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "variadic_functions.h"
 /**
-* _strlen  -  returns the length of a string
+* _strlen  - length of a string
 * @s: string
 * Return: len
 */
@@ -11,8 +11,8 @@ int _strlen(char *s)
 	return (strlen(s));
 }
 /**
-* print_all - a function that prints anything
-* @format: list of types of arguments passed to the function
+* print_all - prints anything
+* @format: list of types of arguments
 */
 void print_all(const char * const format, ...)
 {
@@ -49,7 +49,7 @@ void print_all(const char * const format, ...)
 	va_end(list);
 }
 /**
-* print_char - print a char
+* print_char - char
 * @list: list
 */
 void print_char(va_list list)
@@ -57,7 +57,7 @@ void print_char(va_list list)
 	printf("%c", va_arg(list, int));
 }
 /**
-* print_integer - print integer
+* print_integer - integer
 * @list: list
 */
 void print_integer(va_list list)
@@ -65,7 +65,7 @@ void print_integer(va_list list)
 	printf("%d", va_arg(list, int));
 }
 /**
-* print_float - print a float
+* print_float - float
 * @list: list
 */
 void print_float(va_list list)
@@ -73,7 +73,7 @@ void print_float(va_list list)
 	printf("%f", va_arg(list, double));
 }
 /**
-* print_charchar - print a string
+* print_charch - string
 * @list: list
 */
 void print_charchar(va_list list)
