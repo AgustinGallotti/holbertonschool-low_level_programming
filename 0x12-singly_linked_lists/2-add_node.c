@@ -12,8 +12,12 @@ list_t *add_node(list_t **head, const char *str)
 		if (!str)
 			return (NULL);
 		else
-			struct list_t *str = (struct list_t) malloc(sizeof(struct list_t));
-			str->next = (*head);
-			(*head) = str;
+		{
+			str = (list_t *)malloc(sizeof(str));
+			str = data;
+			str->next = *head;
+			*head = str;
+		}
 	}
+	return (&str);	
 }
