@@ -14,14 +14,18 @@ list_t *add_node(list_t **head, const char *str)
 	{
 		if (!str)
 			return (NULL);
+		
 		str1 = (list_t *)malloc(sizeof(list_t));
+		
+
 		if (!str1)
-		{
-			str1->str = strdup(str);
-			str1->len = strlen(str);
-			str1->next = *head;
-			*head = str1;
-		}
+				return (NULL);
+		
+		str1->str = strdup(str);
+		str1->len = strlen(str);
+		str1->next = *head;
+		*head = str1;
+		
 	}
 	return (str1);	
 }
