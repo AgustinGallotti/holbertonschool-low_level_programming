@@ -7,7 +7,7 @@
 */
 list_t *add_node_end(list_t **head, const char *str)
 {
-    list_t *str1;
+    list_t *str1, *strlt;
 
     if (!str)
         return (NULL);
@@ -23,7 +23,17 @@ list_t *add_node_end(list_t **head, const char *str)
 		str1->str = strdup(str);
 		str1->len = strlen(str);
 		str1->next = NULL;
-		*head = str1;
+	}
+	while (head != NULL)
+	{ 
+		if (strlt->next)
+		{	
+			strlt = *head;
+			strlt = strlt->next;
+			strlt->next = str1;
+		}
+		else
+			*head = str1;
 	}
 
     return (str1);
