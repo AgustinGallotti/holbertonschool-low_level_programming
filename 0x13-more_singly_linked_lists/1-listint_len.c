@@ -1,6 +1,8 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "lists.h"
 /**
-* print_list - print the list
+* listint_len - print cunter of elements
 * @h: pointer to the list of nodes
 * Return: Number of nodes
 */
@@ -10,11 +12,6 @@ size_t listint_len(const listint_t *h)
 
 	while (h != NULL)
 	{
-		if (h->str == NULL)
-			printf("[0] (nil)\n");
-		else
-			printf("[%u] %s\n", h->len, h->str);
-
 		h = h->next;
 		i++;
 	}
