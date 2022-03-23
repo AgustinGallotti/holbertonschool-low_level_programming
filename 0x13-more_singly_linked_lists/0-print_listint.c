@@ -3,7 +3,6 @@
 #include "lists.h"
 /**
 * print_listint - all elements of a listint
-* @listint_t: listas
 * @h: puntero
 * Return: integral
 */
@@ -17,5 +16,5 @@ size_t print_listint(const listint_t *h)
 		h = h->next;
 		i++;
 	}
-	return(i);
+	return (i);
 }
