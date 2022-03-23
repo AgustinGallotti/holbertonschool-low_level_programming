@@ -6,8 +6,6 @@
 * @index: Index of the node
 * Return: The nth node of a listint_t linked list, if
 * the node does not exist, return NULL
-*
-* Auth: MoonBeeJPG
 */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
