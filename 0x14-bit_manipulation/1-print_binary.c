@@ -1,17 +1,23 @@
 #include "main.h"
-#include <stdio.h>
 /**
-* print_binary - is my binary
-* @n: number
+* print_binary - a function that prints the binary representation of a number
+* @n: number to print
 */
 void print_binary(unsigned long int n)
 {
-	if ()
-		print_binary();
-	if (n & 1)
-		_putchar('1');
-	else
-		_putchar('0');
-	n >>= 1;
-}
+	unsigned long int count;
+	int a = 0;
 
+	count = n;
+
+	while ((count >>= 1) > 0)
+		a++;
+
+	while (a >= 0)
+	{
+		if ((n >> a--) & 1)
+			_putchar('1');
+		else
+			_putchar('0');
+	}
+}
