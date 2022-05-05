@@ -4,11 +4,12 @@
 * @h: my head
 * @idx: index
 * @n: number
-* Return new node
+* Return: new node
 */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	dlistint_t *new, *current = *h;
+
 	new = malloc(sizeof(dlistint_t));
 
 	if (!h)
@@ -28,8 +29,9 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		idx--;
 		if (current == NULL)
 			return (NULL);
+
 		if (current->next == NULL)
-			return(add_dnodeint_end(h, n));
+			return (add_dnodeint_end(h, n));
 	}
 	new->next = current->next;
 	new->prev = current;
