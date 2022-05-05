@@ -1,8 +1,6 @@
 #include "lists.h"
 /**
 * add_dnodeint_end - node in the tail
-* @head: head
-* @n: number
 * Return: new node at the tail
 */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
