@@ -1,12 +1,13 @@
 #include "main.h"
 
 /**
-* _strncat - function that concatenates two strings
-* @dest: lenght
-* @src: init
-* @n: jh
-* Return: dest
+* _strncat - dko
+* @dest: sasa
+* @src: lak
+* @n: n
+* Return: 0
 */
+
 char *_strncat(char *dest, char *src, int n)
 {
 	int a = 0, b = 0;
@@ -15,7 +16,7 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		a++;
 	}
-	while(b < n && src[b])
+	while (b < n && src[b])
 	{
 		dest[a] = src[b];
 		a++;

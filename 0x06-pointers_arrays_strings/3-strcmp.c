@@ -1,21 +1,20 @@
 #include "main.h"
 
 /**
-*_strcmp: comparar
-* @s1: as
-* @s2: sasdd
-* Return: ass
+* _strcmp - function that compares two strings
+* @s1: 1
+* @s2: 2
+* Return: coparison
 */
 
 int _strcmp(char *s1, char *s2)
 {
-	int x;
+	int idx;
 
-	for (x = 0; s1[x] != '\0'; x++)
-		if (s1[x] != s2[x])
-			return (s1[x] - s2[x]);
-
-	if (s1[x] != '\0')
-		return (s1[x] - s2[x]);
+	for (idx = 0; s1[idx] != '\0'; idx++)
+		if (s1[idx] != s2[idx])
+			return (s1[idx] - s2[idx]);
+	if (s2[idx] != '\0')
+		return (s1[idx] - s2[idx]);
 	return (0);
 }
