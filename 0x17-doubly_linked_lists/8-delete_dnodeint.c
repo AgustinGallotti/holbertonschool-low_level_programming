@@ -30,7 +30,6 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 			return (-1);
 		i++;
 	}
-	next_node = malloc(sizeof(dlistint_t));
 	next_node = current->next;
 	current->next = next_node->next;
 	free(next_node);
