@@ -1,12 +1,12 @@
 #include "lists.h"
 /**
-* insert_dnode_at_index - insert new node at specific node
+* insert_dnodeint_at_index - insert new node at specific node
 * @h: my head
 * @idx: index
 * @n: number
 * Return new node
 */
-dlistint_t *insert_dnode_at_index(dlistint_t **h, unsigned int idx, int n)
+dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	dlistint_t *new, *current = *h;
 	new = malloc(sizeof(dlistint_t));
