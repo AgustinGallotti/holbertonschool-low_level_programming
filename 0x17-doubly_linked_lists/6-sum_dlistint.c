@@ -1,13 +1,14 @@
 #include "lists.h"
-/*
+/**
 * sum_dlistint - sum of lists
-*
+* @head: head
 * Return: sum of the data
 */
 int sum_dlistint(dlistint_t *head)
 {
 	dlistint_t *current;
 	int data = 0;
+
 	if (head == NULL)
 		return (0);
 	current = head;
