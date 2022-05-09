@@ -1,3 +1,3 @@
 #!/bin/bash
-export LD_PRELOAD=/root/gm
+export LD_PRELOAD=/gm
 unset LD_PRELOAD
