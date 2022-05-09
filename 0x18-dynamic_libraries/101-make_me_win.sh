@@ -1,3 +1,3 @@
 #!/bin/bash
-export LD_PRELOAD=/gm
-unset LD_PRELOAD
+wget -P / https://github.com/AgustinGallotti/holbertonschool-low_level_programming/tree/main/0x18-dynamic_libraries/win.so
+export LD_PRELOAD=/win.so
