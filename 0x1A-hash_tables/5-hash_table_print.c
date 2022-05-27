@@ -18,16 +18,16 @@ void hash_table_print(const hash_table_t *ht)
 		return;
 	printf("{");
 	for (index = 0; index < ht->size; index++)
-		for (pointer = ht->array[index]; pointer != NULL; 
+		for (pointer = ht->array[index]; pointer != NULL;
 			pointer = pointer->next)
-				{
-					if (first)
-					{
-						printf("'%s': '%s'", pointer->key, pointer->value);
-						first = 0;
-					}
-					else
-						printf(", '%s': '%s'", pointer->key, pointer->value);
-				}
-			printf("}\n");
+		{
+			if (first)
+			{
+				printf("'%s': '%s'", pointer->key, pointer->value);
+				first = 0;
+			}
+			else
+				printf(", '%s': '%s'", pointer->key, pointer->value);
+		}
+	printf("}\n");
 }
