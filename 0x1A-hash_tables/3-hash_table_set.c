@@ -19,7 +19,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	if (key == NULL || *key == 0 || ht == NULL || ht->array == NULL
 		|| ht->size == 0)
-			return (0);
+		return (0);
 	index = key_index((const unsigned char *) key, ht->size);
 	pointer = ht->array[index];
 	while (pointer != NULL)
