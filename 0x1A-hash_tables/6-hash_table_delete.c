@@ -12,7 +12,7 @@ void hash_table_delete(hash_table_t *ht)
 	hash_node_t *pointer, *next;
 	unsigned int index;
 
-	if (*ht == 0 || ht == NULL)
+	if (ht == NULL)
 		return; /*program checks*/
 	for (index = 0; index < ht->size; index++)
 		for (pointer = ht->array[index]; pointer != NULL; pointer = next)
