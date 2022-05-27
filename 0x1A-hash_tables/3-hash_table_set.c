@@ -11,22 +11,16 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index = 0;
-	hash_node_t *newnode, *pointer;
+	hash_node_t *newnode = NULL, *pointer = NULL;
 
-	if (key == NULL || *key == 0 || ht == NULL || ht->array == NULL
-		|| ht->size == 0)
+	if (ht == NULL || key == NULL || value == NULL)
 		return (0);
 	index = key_index((const unsigned char *) key, ht->size);
 	newnode = malloc(sizeof(hash_node_t));
 	if (newnode == NULL)
-	{
 		return (0);
-	}
-	if (newnode->key == NULL)
-	{
-		free(newnode);
-		return (0);
-	}
+	
+	pointer = ht->array[index];
 	while (pointer != NULL)
 	{
 		if (strcmp(pointer->key, key) == 0)
