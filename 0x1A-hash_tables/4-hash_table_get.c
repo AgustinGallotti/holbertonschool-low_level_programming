@@ -15,16 +15,15 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	unsigned long int index;
 
 	if (ht == NULL || ht->size == 0 || key == NULL || *key == 0)
-		return (NULL); /*program checks*/
+		return (0); /*program checks*/
 	index = hash_djb2((const unsigned char *) key);
 	index %= ht->size;
 	pointer = ht->array[index];
 	while (pointer != NULL)
 	{
 		if (strcmp(pointer->key, key) == 0)
-			break; /*corner case*/
+			return (pointer->value); /*corner case*/
 	}
-	if (pointer == NULL)
-		return (NULL);
-	return (strdup(pointer->value));
+
+	return (0);
 }
