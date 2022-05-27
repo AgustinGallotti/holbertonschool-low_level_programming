@@ -16,13 +16,17 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 
 	if (ht == NULL || ht->size == 0 || key == NULL || *key == 0)
 		return (0); /*program checks*/
+
 	index = hash_djb2((const unsigned char *) key);
 	index %= ht->size;
 	pointer = ht->array[index];
+
 	while (pointer != NULL)
 	{
 		if (strcmp(pointer->key, key) == 0)
 			return (pointer->value); /*corner case*/
+
+		pointer = pointer->next;
 	}
 
 	return (0);
