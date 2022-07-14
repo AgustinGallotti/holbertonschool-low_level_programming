@@ -1,0 +1,6 @@
+TARGET : school.c
+	$(CC) $(CFLAGS) $(SRC) $(TARGET) -c $<
+SRC : school.c main.c
+OBJ : $(SRC:.c=.o)
+CC : /usr/local/bin/gcc
+CFLAGS : -g  
