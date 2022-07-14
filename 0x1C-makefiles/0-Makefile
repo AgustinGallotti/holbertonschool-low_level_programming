@@ -1,2 +1,2 @@
-0-Makefile : main.c school.c
-  gcc main.c school.c -o school
+all: school.c
+        gcc CFLAGS -Wall -o school school.c
