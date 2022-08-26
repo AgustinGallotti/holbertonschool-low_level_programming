@@ -10,7 +10,7 @@
 */
 int binary_search(int *array, size_t size, int value)
 {
-	size_t low = size - 1, hig = 0, mid = 0;
+	size_t low = 0, hig = size - 1, mid = 0;
 
 	if (array == NULL)
 		return (-1);
@@ -22,11 +22,11 @@ int binary_search(int *array, size_t size, int value)
 		if (array[mid] == value)
 			return (mid);
 	if (array[mid] > value)
-		hig = mid + 1;
+		hig = mid - 1;
 	else
-		low = mid - 1;
+		low = mid + 1;
 	}
-	return (0);
+	return (-1);
 }
 /**
 * BSH - print the bin
