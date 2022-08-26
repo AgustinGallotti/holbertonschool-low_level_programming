@@ -21,12 +21,12 @@ int binary_search(int *array, size_t size, int value)
 		mid = (low + hig) / 2;
 		if (array[mid] == value)
 			return (mid);
-	if (value > array[mid])
+	if (array[mid] > value)
 		hig = mid + 1;
 	else
 		low = mid - 1;
 	}
-	return (-1);
+	return (0);
 }
 /**
 * BSH - print the bin
