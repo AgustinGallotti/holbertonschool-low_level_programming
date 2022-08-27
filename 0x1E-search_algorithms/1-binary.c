@@ -5,7 +5,8 @@
 /**
 * binary_search - search for a value in a sorted array of integers
 * @value: value in the array sorted
-*
+* @array: point at the first index
+* @size: number of the elements
 * Return: values
 */
 int binary_search(int *array, size_t size, int value)
