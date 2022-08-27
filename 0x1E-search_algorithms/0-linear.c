@@ -6,7 +6,8 @@
 * linear_search - searche for a value in an array of integers usinglinearsearch
 *
 * @value: value of integers
-*
+* @array: array to point at first index
+* @size: number of elements
 * Return: NULL if not present or value
 */
 int linear_search(int *array, size_t size, int value)
